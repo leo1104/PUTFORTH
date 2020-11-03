@@ -1,3 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+}
+
 grid{
     display: grid;
     grid-template-areas:
@@ -9,14 +20,86 @@ grid{
     height: 100%;;
 }
 
+
 .header{
     grid-area: header;
 }
+.blogs{
+display: grid;
+place-items: center center;
+}
 
+.blogs>h3{
+    font-size: 41px;
+}
+
+.cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(223px,1fr));
+padding: 20px;
+grid-gap: 40px;
+}
+
+.card{
+background-color: black;
+border-radius: 20px;
+box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.details{
+    padding: 20px 10px;
+}
+
+.details>h3{
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.details>button{
+    color: black;
+    font-size: 18px;
+    display: flex;
+    margin: auto;
+    background-image:linear-gradient(0deg, #fdc830,#f37335 ) ;
+    border-radius: 7px;
+}
+
+.details>button:hover{
+    background-image:linear-gradient(0deg, #005aa7,#fffde4 ) ;
+}
 .body{
     grid-area: body;
 }
 
+
+
+
+
 .footer{
     grid-area: footer;
+}
+
+
+@media screen and (max-width:720px){
+
 }
