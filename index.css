@@ -20,6 +20,22 @@ grid{
     height: 100%;;
 }
 
+/* profile */
+
+.profile{
+  margin:3rem 6rem 18rem 6rem;
+
+}
+
+.profile>img{
+  width: 20%;
+  float: right;
+  border-radius: 75%;
+}
+
+.profile-text{
+padding: 5rem 28rem 0 0;
+}
 
 .header{
     grid-area: header;
