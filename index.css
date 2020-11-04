@@ -134,17 +134,29 @@ padding: 0.8rem;
   .footer-copyright{
 
     text-align: center;
+    color: whitesmoke;
+    
+
   }
   .footer-copyright>a{
     text-decoration: none;
-    color: black;
   
   }
   .footer-copyright>a:hover{
-    color:blueviolet;
+    color:rgb(95, 226, 101);
     font-size: 1.3rem;
   }
 
+.fot-color{
+  background-color: #181717;
+  border-radius: 2rem;
+  margin: 1rem 8rem;
+
+}
+
 @media screen and (max-width:720px){
+  .footer-copyright{
+    margin: 0 0;
+  }
 
 }
