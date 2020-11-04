@@ -93,12 +93,57 @@ img{
 
 
 
-
+/* footer */
 
 .footer{
     grid-area: footer;
 }
+.centerdiv{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
+  .icon{
+    height: 50px;
+    width : 50px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    
+    margin: 20px;
+    box-shadow: 1px 4px 2px 2px #c2c2c5;
+  }
+  a i {
+    transition: all 0.3s linear;
+  }
+  a:hover i{
+    transform: scale(1.3s);
+  }
+  .fa{
+padding: 0.8rem;    
+  }
+  .fa-linkedin{
+    color: rgb(27, 102, 163);
+
+  }
+  .fa-facebook{
+    color: rgb(5, 76, 209);
+  }
+  .footer-copyright{
+
+    text-align: center;
+  }
+  .footer-copyright>a{
+    text-decoration: none;
+    color: black;
+  
+  }
+  .footer-copyright>a:hover{
+    color:blueviolet;
+    font-size: 1.3rem;
+  }
 
 @media screen and (max-width:720px){
 
