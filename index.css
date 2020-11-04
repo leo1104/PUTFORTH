@@ -37,6 +37,27 @@ grid{
 padding: 5rem 28rem 0 0;
 }
 
+.profile-text>h2{
+  font-family: 'Jua', sans-serif;
+  font-size: 3.5rem;
+  padding:0.5rem 0;
+}
+
+.profile-text>p{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2rem;
+  padding:0.5rem 0;
+
+}
+
+.profile-text>button{
+  margin:0.5rem 0;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background: indigo;
+  color: white;
+}
+
 .header{
     grid-area: header;
 }
