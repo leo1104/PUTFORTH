@@ -23,7 +23,11 @@ grid{
 /* profile */
 
 .profile{
-  margin:3rem 6rem 18rem 6rem;
+  margin: 2rem 6rem 9rem 6rem;
+  box-shadow: 10 4px 8px 0 black;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+  border-radius: 2rem;
+  background: hsl(240, 61%, 81%);
 
 }
 
@@ -31,6 +35,8 @@ grid{
   width: 20%;
   float: right;
   border-radius: 75%;
+  padding: 7rem 0px;
+
 }
 
 .profile-text{
@@ -48,6 +54,7 @@ padding: 5rem 28rem 0 0;
   font-size: 1.2rem;
   padding:0.5rem 0;
 
+
 }
 
 .profile-text>button{
@@ -56,6 +63,7 @@ padding: 5rem 28rem 0 0;
   border-radius: 1.5rem;
   background: indigo;
   color: white;
+  border-color: indigo;
 }
 
 .header{
