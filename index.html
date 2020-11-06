@@ -8,14 +8,29 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".dark").click(function(){
+                
+                $("body").css("background-color","black"),
+                $(".heading").css("color","white"),$(".card").css("background-color","white"),
+                $(this).css("color","white")
+            });
+        });
+    </script>
     <title>Putforth</title>
 </head>
 
 <body>
 
     <div class="grid-cont">
-        <div class="header">
-        </div>
+    <header>
+        <h1 class="heading">PUTFORTH</h1>
+        <i class="fa fa-adjust dark" aria-hidden="true"></i>
+
+
+    </header>
 
         <div class="profile">
             <img src="img2.png" alt="Profile Image">
