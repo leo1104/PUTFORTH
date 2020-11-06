@@ -9,31 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $(".dark").click(function(){
-                
-                $("body").css("background-color","black"),$(".heading").css("background","none"),
-                $(".heading").css("color","white"),
-                $(".card").css("background-color","white")
-            });
-
-            $(".light").click(function(){
-                $("body").css("background-color","white"),$(".heading").css("color","black"),$(".card").css("background-color","black")
-            })
-        });
-    </script>
+    
     <title>Putforth</title>
 </head>
 
-<body>
+<body class="body1">
 
     <div class="grid-cont">
     <header>
         <h1 class="heading">PUTFORTH</h1>
         <div class="header-bg">
-        <i class="fa fa-adjust dark" aria-hidden="true"></i>
-        <i class="fa fa-adjust light" aria-hidden="true"></i>
+        <input type="checkbox"  id="dark">
+        <label for="dark">Click here</label>
     </div>
     </header>
 
@@ -154,7 +141,29 @@
         </footer>
 
     </div>
+    <script>
+        const colorSwitch=document.getElementById('dark');
+        colorSwitch.addEventListener('click',checkMode);
+        function checkMode(){
+            console.log('checking');
+            if(colorSwitch.checked){
+                console.log("darkon");
+            darkModeOn();
+            }
+            else{
+                console.log("darkoff");
+             darkModeOff();   
+            }
+        }
 
+        function darkModeOn(){
+            document.body.classList.add("dark-mode");
+        }
+
+        function darkModeOff(){
+            document.body.classList.remove("dark-mode");
+        }
+    </script>   
 </body>
 
 </html>

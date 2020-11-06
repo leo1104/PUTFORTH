@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+:root{
+  --clr-base:white;
+  --card-base:black;
+  --font:black;
+}
+.body1{
+  background-color: var(--clr-base);
+}
+.dark-mode{
+  --font:white;
+  --clr-base:black;
+  --card-base:darkblue;
+}
+
 body{
     height: 100vh;
     font-family: sans-serif;
@@ -28,22 +42,16 @@ header{
 }
 
 header>h1{
+  color: var(--font);
   padding: 1.5rem;
   border-radius: 2rem;
 }
-.header-bg{
-  background-color: #a0a0a0;
-  border-radius: 2rem;
-}
-.light{
-  color: white;
-  margin: 0 0 0 0;
-font-size: 3rem;
-cursor: pointer;
-}
+
+
 .dark{
   font-size: 3rem;
   cursor: pointer;
+  color:yellow
 }
 
 /* profile */
@@ -117,7 +125,7 @@ grid-gap: 40px;
 }
 
 .card{
-background-color: black;
+background-color: var(--card-base);
 border-radius: 20px;
 box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }
