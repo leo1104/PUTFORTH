@@ -29,7 +29,6 @@ header{
 
 header>h1{
   padding: 1.5rem;
-  background-color: cyan;
   border-radius: 2rem;
 }
 .header-bg{
@@ -62,7 +61,7 @@ cursor: pointer;
   width: 20%;
   float: right;
   border-radius: 75%;
-  padding: 7rem 0px;
+  padding: 3.5rem 0px;
 
 }
 
@@ -238,7 +237,7 @@ padding: 0.8rem;
   margin: 0;
   }
     .profile > img {
-      width: 29%;
+      width: 36%;
       padding: 0;}
   .profile-text{
     padding: 0;
@@ -252,6 +251,7 @@ padding: 0.8rem;
   }   
   .footer-copyright{
     margin: 0 0;
+    
   }
 .fot-color{
   margin: 0;
