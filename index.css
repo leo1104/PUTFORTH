@@ -197,6 +197,7 @@ place-items: center center;
 
 .blogs>h3{
     font-size: 41px;
+    color: var(--font);
 }
 
 .cards{
@@ -322,6 +323,23 @@ padding: 0.8rem;
 }
 
 @media screen and (max-width:720px){
+  header{
+    display: inline-block;
+    margin: 0;
+  }
+  header>h1{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .heading>img{
+    width: 85%;
+  }
+
+  .header-text{
+    margin: 3rem 6rem;
+  }
   .profile {
     padding: 1.2rem 1.5rem 2.5rem 1.5rem;
   margin: 0;
