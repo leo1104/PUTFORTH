@@ -8,6 +8,7 @@
   --clr-base:white;
   --card-base:black;
   --font:black;
+  --bg-img:url("WallStudios-77-min.jpg")no-repeat center center/cover;
 }
 .body1{
   background-color: var(--clr-base);
@@ -16,6 +17,7 @@
   --font:white;
   --clr-base:black;
   --card-base:darkblue;
+  --bg-img:url('bg1.jpg')no-repeat center center/cover;
 }
 
 body{
@@ -34,6 +36,11 @@ grid{
     height: 100%;;
 }
 
+.bgImg{
+background: var(--bg-img);
+padding: 2rem;
+border-radius: 0 0 2rem 2rem;
+}
 /* Header */
 header{
   display: flex;
@@ -43,27 +50,102 @@ header{
 
 header>h1{
   color: var(--font);
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 2rem;
 }
 
+.heading>img{
+width: 46%;
+border-radius: 0.5rem;
+}
+.header-text{
+  display: flex;
+  margin: 3rem 0;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 2.5rem;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  padding: 0.5rem;
+  border: 0.05px solid #0000006e;
+}
+.header-text:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  background-color: #000;
+  filter: blur(10px);
+  margin: -20px;
+  }
 
-.dark{
-  font-size: 3rem;
+.header-text>p{
+  margin-top: 0.5rem;
+}
+
+input[type='checkbox']{
+  background: #333;
+  width: 4rem;
   cursor: pointer;
-  color:yellow
+  margin: 0 1rem;
+  height: 2rem;
+  -webkit-appearance: none;
+  border-radius: 1rem;
+}
+input[type='checkbox']:before{
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 0.8s;
+}
+input:checked[type='checkbox']:before{
+  content: '';
+  background: orange;
+  transform: translateX(2rem);
 }
 
 /* profile */
 
 .profile{
+   
+  
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 2.5rem;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    
+    
   margin: 2rem 6rem 9rem 6rem;
   /* box-shadow: 10px 4px 8px 0 black; */
   padding: 0 1.5rem 2.5rem 1.5rem;
-  border-radius: 2rem;
-  background: hsl(240, 61%, 81%);
-
+  /* border-radius: 2rem; */
+  
 }
+
+.profile:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+  }
 
 .profile>img{
   width: 20%;
@@ -187,7 +269,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-
+padding: 2.5rem;
   }
   .icon{
     height: 50px;
@@ -234,8 +316,8 @@ padding: 0.8rem;
 
 .fot-color{
   background-color: #181717;
-  border-radius: 2rem;
-  margin: 1rem 8rem;
+  border-radius: 0;
+  margin: 0;
 
 }
 
